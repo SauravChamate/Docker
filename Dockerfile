@@ -3,6 +3,5 @@ LABEL maintainer = "Saurav<saurav.c@example.com>"
 RUN apt update
 RUN apt install nginx -y
 WORKDIR /var/www/html
-COPY index.html .
 EXPOSE 80
-CMD ["nginx", "-g", "daemon off;"]
+
